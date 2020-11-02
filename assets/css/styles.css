@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+}
+
+#login{
+    box-sizing: border-box;
+    background: url("../img/fondo2.jpg");
+    background-size: cover;
+}
+
+.fa{
+    color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}

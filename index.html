@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+        <title>Práctica - HASH</title>
+        <script src="assets/js/angular.js"></script>
+        <script src="controladores/ControladorRegistro.js"></script>
+    </head>
+    <body ng-app="Registro">
+        <header>
+            <div class="container">
+                <div class="row p-5">
+                    <div class="col-12 text-center">
+                        <h3 class="text-light"><b>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</b></h3>
+                        <h4 class="text-light"><b>FACULTAD DE ESTUDIOS SUPERIORES ARAGÓN</b></h4>
+                        <label class="text-light lead"><b>PRÁCTICA - HASH</b></label>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main ng-controller="registroControlador">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <i class="fa fa-user"></i>
+                        <label class="lead text-light">¡REGÍSTRATE!</label>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">    
+                        <input type="text" class="form-control" placeholder="Nombre de usuario" ng-model="registro.usuario">
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <input type="email" class="form-control" placeholder="Correo" ng-model="registro.correo">
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <input type="password" class="form-control" placeholder="Contraseña" ng-model="registro.contrasena">
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-info" ng-click="registrar()">Registrar</button>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="p-3">
+            <small class="text-light"><b>AlUMNO: JIMÉNEZ GAMBOA MARVIN ROBERTO</b></small>
+            <br>
+            <small class="text-light">SEGURIDAD INFORMÁTICA - 1758</small>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
